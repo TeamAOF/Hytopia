@@ -3,6 +3,9 @@
 ## Changes
 * Reverted the **Tiered Progression System**, needs more work.
 
+## Fixes
+* Fixed a bug where if your bed was in an unloaded chunk it would tell your that your bed is obstructed and respawn you at the world spawn.
+
 # 21th of January
 
 # Revamped Progression
