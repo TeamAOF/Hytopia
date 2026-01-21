@@ -145,6 +145,12 @@ A veteran alpha wolf that hunts alone rather than in packs.
 * Now spawns in Forest biomes
 
 # Changes
+* Removed NoCube Bags
+* Removed NoCube Bakehouse
+* Removed NoCube Culinary
+* Removed NoCube Orchard
+* Removed NoCube Undead_Warriors
+* Removed Multi Tools
 * Loot Chests are now instanced (Each player sees unique loot that's generated especially for them!)
 * Removed the Teleporter limit and introducing private and restricted teleporters.
 
