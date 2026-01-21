@@ -1,7 +1,151 @@
 # 21th of January
 
-### Fixes
-Fixed huge lag spike every 5 second due to server reading ``YmmersiveMelodiesRegistry``, which contains all the custom MIDI files. This does NOT work for such a large server we're running.
+# Revamped Progression
+• **9-Tier Progression:** From humble Wood to legendary Onyxium.
+• **Durability scaling:** Higher tier tools last exponentially longer - Onyxium has 100x the durability of Wood!
+• **Rewarding Progression:** Each tier upgrade is a meaningful power boost.
+
+**The Core Rules**
+• **Tiered Mining:** You can only mine ores using the tool from the tier directly below it (or higher).
+• **Specialization:** Tools now have strict roles:
+    • **Pickaxes:** Rocks and Ores only.
+    • **Axes:** Wood only.
+    • **Shovels:** Soil and Sand only. (currently only go up to Cobalt tier, later will have more)
+• **No Unarmed Harvesting:** Hand-gathering is highly inefficient or disabled for most blocks. Use the right tool for the job!
+
+**Tool and Ore Tiers**
+Progress through the world in this specific order:
+1. **Wood** (Cannot mine ore; Stone only)
+2. **Crude (Stone)**
+3. **Copper**
+4. **Iron**
+5. **Thorium**
+6. **Cobalt**
+7. **Adamantite**
+8. **Mithril** (Coming in Hytopia 1.0)
+9. **Onyxium** (Coming in Hytopia 1.0)
+
+**Getting Started (Pro-Tips)**
+• **Scavenge First:** Since you can't punch trees effectively, start by picking up Sticks, Fiber, and Rubble (stone bits) directly off the ground.
+• **Crafting:** Wood tools can be made by hand, but they are very weak.
+• **Goal:** Build a Workbench immediately to unlock Crude (Stone) tools. This is where your real journey begins.
+
+# NEW CONTENT
+
+## Blades of Dho'zoth
+The "Realm of Nothingness" vehemently leaks itself into the world of Orbis  
+
+**Light Attack**  
+![Light_Attack](https://i.imgur.com/LwZOmeG.gif)  
+
+**Heavy Attack**  
+![Heavy_Ability](https://i.imgur.com/NzVCCsJ.gif)  
+
+## Combat Gauntlets
+A new way of training the Unarmed Skill!
+
+**Heavy Attack**  
+![Heavy_Attack](https://i.imgur.com/uwCI8Ak.gif)  
+
+**Ultimate Ability**  
+![Ultimate_Ability](https://i.imgur.com/ORHL5Ze.gif)  
+
+## Adventurer Bear
+An elite grizzly bear variant wearing scavenged armor.
+
+**Features:**
+
+* Significantly increased health pool
+* Higher damage output than the Battle Hardened Bear
+* Faster movement speed
+* Enhanced loot drops including valuable ingredients
+
+## Battle Hardened Bear
+A rare grizzly variant wearing a helmet from past encounters.
+
+**Features:**
+
+* Increased Max Health
+* Increased damage and movement speed
+* Collectable Bear Helmet
+* Superior loot table with ore bars and materials
+
+## Battle Scarred Wolf
+A veteran alpha wolf that hunts alone rather than in packs.
+
+**Features:**
+
+* Increased health and damage
+* Enhanced loot drops
+* Rare spawn
+
+# BALANCE CHANGES
+
+## Rhino Toads (Both Variants)
+
+**Combat:**
+
+* Attack cooldown: 0.53s → 1.6s
+* Tongue Attack Buffer: 0.33s → 1s
+* Damage: 35 → 25
+* Knockback force: 14 → 10
+* Vertical knockback: 1 → 2
+  
+**Stats:**
+
+* Health: 124 → 160
+* Speed: 8 → 9
+* View range: 12 → 10
+* Hearing range: 8 → 7
+* Flee range: 15 → 12
+* Combat distance: 9 → 8
+
+## Magma Rhino Toad
+
+**Guaranteed Drops:**
+
+* Raw Wildmeat: 2-4 (was 1-2)
+* Medium Hide: 2-4 (was 1-2)
+
+**Bonus Drops:**
+
+* Bone Fragments: 50% chance for 1-2
+* Copper Ore: 20% chance for 1
+* Iron Ore: 12% chance for 1
+* Silver Ore: 4% chance for 1
+* Gold Ore: 1% chance for 1
+
+## Grizzly Bear
+
+**Stats:**
+
+* Health: 124 → 150
+* Chase range: 11 → 8
+
+**Loot:**
+
+* Heavy Hide: 1-3 (was 1-2)
+* Raw Wildmeat: 3-4 (was 2-3)
+
+
+## Black Wolf
+
+**Stats:**
+
+* Health: 103 → 80
+
+**Spawning:**
+
+* Pack size: 2-3 → 3-4 wolves
+* Now spawns in Mountain biomes
+* Now spawns in Forest biomes
+
+# Changes
+* Loot Chests are now instanced (Each player sees unique loot that's generated especially for them!)
+* Removed the Teleporter limit and introducing private and restricted teleporters.
+
+## Fixes
+* Fixed huge lag spike every 5 second due to server reading ``YmmersiveMelodiesRegistry``, which contains all the custom MIDI files. This does NOT work for such a large server we're running.
 
 ---
 
