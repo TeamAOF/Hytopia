@@ -1,5 +1,10 @@
 # 21th of January
 
+## Changes
+* Reverted the **Tiered Progression System**, needs more work.
+
+# 21th of January
+
 # Revamped Progression
 • **9-Tier Progression:** From humble Wood to legendary Onyxium.
 • **Durability scaling:** Higher tier tools last exponentially longer - Onyxium has 100x the durability of Wood!
