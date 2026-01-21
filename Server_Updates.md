@@ -36,18 +36,22 @@ Progress through the world in this specific order:
 The "Realm of Nothingness" vehemently leaks itself into the world of Orbis  
 
 **Light Attack**  
+
 ![Light_Attack](https://i.imgur.com/LwZOmeG.gif)  
 
 **Heavy Attack**  
+
 ![Heavy_Ability](https://i.imgur.com/NzVCCsJ.gif)  
 
 ## Combat Gauntlets
 A new way of training the Unarmed Skill!
 
 **Heavy Attack**  
+
 ![Heavy_Attack](https://i.imgur.com/uwCI8Ak.gif)  
 
 **Ultimate Ability**  
+
 ![Ultimate_Ability](https://i.imgur.com/ORHL5Ze.gif)  
 
 ## Adventurer Bear
