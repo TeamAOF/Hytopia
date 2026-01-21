@@ -16,4 +16,9 @@ With a strong emphasis on co-op gameplay, Hytopia offers a welcoming environment
 * Leaderboards
 * And much more!
 
+## Useful Links:
+
+* [Patch Notes](https://github.com/TeamAOF/Hytopia/blob/main/Patch_Notes.md)
+* [Useful Commands](https://github.com/TeamAOF/Hytopia/blob/main/Useful_Commands.md)
+
 **Build together. Adventure together. Welcome to Hytopia.**
