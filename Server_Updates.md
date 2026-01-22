@@ -14,6 +14,15 @@
 ## :lizard: PETS
 A new expansion that breathes new life into Hytale’s wilderness. From the smallest woodland friends to towering elemental titans, every creature can be earned, hatched, and raised as your own loyal companion.  
 
+## 🛠️ THE HUNT & HARVEST
+**The path to companionship has evolved**. To bring a new friend into the world, you must now combine the thrill of the hunt with the skill of the farm.
+
+## 🥚 THE BROKEN EGG SYSTEM
+Peaceful wildlife no longer drop completed eggs. Instead, when defeated, they now have a rare chance to drop a **Broken Egg**. These fragile remnants contain the essence of the creature, but they are too damaged to hatch on their own.
+
+## 🔨 THE FARMER'S WORKBENCH
+To restore a companion, you must take the **Broken Egg** to your **Farming Workbench**. By "infusing" the shell with harvested goods, you can craft a functional Pet Egg.
+
 The following companions must be restored at the Farming Workbench using a Broken Egg:
 
 * **Mouse**
