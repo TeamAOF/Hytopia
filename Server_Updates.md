@@ -1,14 +1,61 @@
 # 22th of January
 
+## NEW CONTENT
+:japanese_ogre: **New Boss: The Entity of the Hollow** - A powerful ancient creature with unique mechanics.  
+> Strategy: **Full Mithril (Solo)** or **Full Adamantite (Team)** required. **Healing Totem** & **Shield** highly recommended!  
+
+:dagger: **Vine-Twined Daggers** - New Legendary weapon with a boss signature ability!  
+:gem: **Prisma Armor (Tier 4)** - The new legendary armor set, surpassing Onyxium!  
+:sparkles: **Magic Overhaul** - Full staff progression (Copper to Onyxium) using a new **Mana-only system**!  
+:parachute: **Gliders** - Standard & **Advanced Gliders** with jump-boost technology!  
+:pick: **Natural Mithril** - Now generates naturally in the **Dragonspire Weald** fragment!  
+:stopwatch: **Improved Exploration** - Dragonspire Weald timer increased to **20 minutes**.  
+
+## :lizard: PETS
+A new expansion that breathes new life into Hytale’s wilderness. From the smallest woodland friends to towering elemental titans, every creature can be earned, hatched, and raised as your own loyal companion.  
+
+The following companions must be restored at the Farming Workbench using a Broken Egg:
+
+* **Mouse**
+* **Penguin**
+* **Dog**
+* **Fox**
+* **Bunny**
+* **Lizard**
+* **Pig**
+* **Bison**
+* **Camel**
+
+## THE PREDATORS & MAGICAL (Loot Only)
+To get these eggs, you must hunt and defeat the creature in the wild.
+* **Cave Raptor** – [Requires: Defeat Cave Raptor]
+* **Spider** – [Requires: Defeat Spider]
+* **Wraith Lantern** – [Requires: Defeat Wraith]
+* **Trillodon** – [Requires: Defeat Trillodon]
+
+## THE ELEMENTAL GOLEMS (Loot Only)
+Harness the power of the elements by defeating these ancient guardians.
+
+* :fire: **Flame Golem** – [Requires: Defeat Flame Golem]
+* :snowflake: **Frost Golem** – [Requires: Defeat Frost Golem]
+* :seedling: **Earth Golem** – [Requires: Defeat Earth Golem]
+* :zap: **Thunder Gole**m – [Requires: Defeat Thunder Golem]
+* :hourglass_flowing_sand: **Sand Golem** – [Requires: Defeat Sand Golem]
+
+### Changes
+* Added weapons stats, see detailed damage statistics, organized by type and rarity.
+
+# 22th of January
+
 ## Fixes
 * Fixed a bug where chopping wood & other similar interactions would kick you.
 
 # 21th of January
 
-## Changes
+### Changes
 * Reverted the **Tiered Progression System**, needs more work.
 
-## Fixes
+### Fixes
 * Fixed a bug where if your bed was in an unloaded chunk it would tell your that your bed is obstructed and respawn you at the world spawn.
 
 # 21th of January
