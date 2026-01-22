@@ -1,3 +1,8 @@
+# 22th of January
+
+## Fixes
+* Fixed a bug where chopping wood & other similar interactions would kick you.
+
 # 21th of January
 
 ## Changes
