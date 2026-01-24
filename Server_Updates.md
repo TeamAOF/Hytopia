@@ -1,3 +1,64 @@
+# 24th of January
+
+## 🪙 Economy Revamp
+### 🏦 **The Marketplace**
+**Buying Items**
+* **Global Access** - Open the marketplace from anywhere (**/market**).
+* **Categorized Items** - Easily find what you need (Weapons, Tools, Materials, etc.).
+* **Search System** - Quickly search for specific items by name.
+* **Safe Transactions** - If you don't have enough inventory space, the purchase will fail and you won't lose any money.
+
+**Selling Items**
+* **Inventory Listing** - Select any valid item from your inventory and set your own price.
+* **Management** - View all your active listings and cancel them at any time to get your items back.
+* **Sales History** - Track what you've sold and how much you've earned.
+
+### 💵 Payments
+**Transaction Fees**
+* Every payment will be hit with a 0.05 per dollar fee.  
+
+**New Payment GUI**  
+* Opened with /Pay
+<img width="337" height="336" alt="{9A1CA75C-CA43-4C51-A7DA-84F05CAE9A18}" src="https://github.com/user-attachments/assets/3fb91740-67ee-4cae-b2d5-0e168d002e19" />
+
+### ⛏️ Jobs
+**Mining Rewards**
+* **Tier-based rewards** - Ores classified by rarity (COMMON → LEGENDARY)
+* **Auto-classification** - Uses Hytale Family tags to detect ore types
+* **Vein Streak System** - Audio feedback and bonus coins for consecutive ore mining
+* **Tool Required** - Must use a pickaxe (bare hands give no reward)
+* **Tool Qualit**y Bonus (pending - waiting for Hytale API)
+* **Depth Bonus** - Deeper mining pays more
+
+**Mob Kill Rewards**
+* **Automatic NPC classification** - No manual config required for any mob
+* **180+ mob patterns** - Wildcard-based classification covers all NPCs
+* **Third-party mod support** - Works with ANY mod that adds custom NPCs
+* **Threat Score algorithm** - Calculates tier from HP, damage, and aggression
+* **Physical coin drops** - When EcotaleCoins is installed
+* **Anti-Farm system** - Diminishing returns to prevent abuse
+
+**Security & Economy Protection**
+* **Anti-Farm** - Diminishing returns for repetitive farming
+* **Rate Limiting** - Per-player burst protection
+* **Economy Cap** - Server-wide hourly injection limit
+* **Exclusion Lists** - Block specific mobs/blocks from rewards
+
+### 💱 The Reset
+* Balances and shops are being reset to ensure a future proof economy system going forward
+* New starting balance of **$100**
+* Voting rewards has been lowered to **$150** per site
+
+## 🌀 Ancient Waystones
+* Create interconnected teleport networks, manage visibility, share with friends, and travel across your world instantly!
+
+## 👹 The Removal of End Game
+* You can no longer obtain Mihtril & Onyxium
+* You can no longer craft Prisma Armor
+* Removed due to immense lag
+* Will be readded once issues has been properly fixed, thanks for your understanding!
+---
+
 # 22th of January
 
 ## NEW CONTENT
@@ -53,6 +114,7 @@ Harness the power of the elements by defeating these ancient guardians.
 
 ### Changes
 * Added weapons stats, see detailed damage statistics, organized by type and rarity.
+---
 
 # 22th of January
 
