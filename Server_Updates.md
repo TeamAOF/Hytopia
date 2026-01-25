@@ -1,3 +1,21 @@
+# 25th of January
+
+## 🏆 Skills & Item Rewards
+### Item Rewards at Milestones - Receive items when reaching skill levels
+* All 16 skills have rewards at levels 10, 25, 50, 100
+* Total Level rewards at 50, 100, 200, 350, 500, 750, 1000
+* Level 100 rewards include legendary weapons (Flame, Void, Spectral)
+
+### Item Rewards UI - New page to view and claim your rewards
+* Access via "Rewards" tab on Skill Overview
+* See tier status: LOCKED, READY, CLAIMED
+* CLAIM button to receive items (no auto-claim)
+* Toggle between Skill and Total Level rewards
+* Rewards tab glows orange with * when rewards available
+
+### Changes
+* Increased ``levelScaleMultiplier`` from 1.0 to 1.2
+
 # 24th of January
 
 ## 🪙 Economy Revamp
