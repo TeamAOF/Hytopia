@@ -15,6 +15,7 @@
 
 ### Changes
 * Increased ``levelScaleMultiplier`` from 1.0 to 1.2
+---
 
 # 24th of January
 
