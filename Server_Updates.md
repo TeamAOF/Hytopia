@@ -1,3 +1,123 @@
+# 26th of January
+
+## 📊 XP Rates
+* Ever played OSRS? This is it!
+* Leveling formula has completely changed. XP requirements are higher at all levels, so existing players will have lower levels with the same XP.
+
+### Complete formula overhaul - Combines OSRS exponential curve with quadratic floor
+* Early/mid levels ~10% harder than previous quadratic formula
+* Endgame scales exponentially (OSRS-style)
+* Level 100 = ~10M XP (true endgame grind)
+
+### New XP requirements:
+* Level 10: ~14,270 XP
+* Level 25: ~95,573 XP
+* Level 50: ~446,222 XP
+* Level 80: ~2,274,045 XP
+* Level 100: ~10,000,000 XP
+
+## 🧌 Mob Balance Changes
+### 🧠 Intelligent:
+
+**Goblin Duke**
+* Health: 226 -> 352  
+* Speed: 4 -> 8  
+
+**Outlander Brute**  
+* Health: 124 -> 390  
+* Melee Attack Damage: 35 -> 40  
+* Chase Speed: 0.4 -> 1  
+
+**Wolf Outlander Priest**
+* Health: 107 -> 118  
+
+**Wolf Outlander Shaman**
+* Health: 118 -> 107  
+
+**Trork Chieftain** 
+* Health: 124 -> 302  
+
+**Trork Shaman**  
+* Health: 61 -> 74  
+
+**Trork Hunter**  
+* Health: 61 -> 72  
+
+**Trork Mauler**  
+* Health: 61 -> 94  
+* Melee Attack Damage: 23 -> 32  
+
+**Trork Sentry** 
+* Health: 61 -> 83  
+
+**Trork Unarmed**
+* Health: 42 -> 72  
+
+**Trork Warrior** 
+* Health: 61 -> 94  
+* Melee Attack Damage: 23 -> 26  
+
+**Wolf Trork Hunter** 
+* Health: 38 -> 72  
+
+### 🌑 Void
+
+**Void Crawler**  
+* Health: 74 -> 84  
+
+**Void Eye** 
+* Health: 61 ->  104  
+
+**Void Spawn**
+* Health: 193 -> 223  
+* Melee Attack Damage: 48 -> 50  
+
+**Void Spectre**
+* Health: 41 -> 51  
+
+### 🐲 Mythic
+
+**Yeti**
+* Health: 226 -> 430  
+* Melee Attack Damage: -> 40  
+
+### 🔥 Elemental
+
+**Earth Golem** 
+* Health: 160 -> 246  
+* Melee Attack Damage: 9 -> 27  
+* Desired Attack Distance Range: 2/2.6 -> 1/1.6  
+
+**Flame Golem**
+* Health: 283 -> 404  
+* Speed: 5 -> 6  
+* Desired Attack Distance Range: 2/2.4 -> 1/1.4  
+* Melee Attack Damage: -> 54  
+
+**Frost Golem** 
+* Health: 224 -> 382  
+* Speed: 5 -> 7  
+* Desired Attack Distance Range: 2/2.4 -> 1/1.4  
+* Melee Attack Damage: -> 51  
+
+**Sand Golem**
+* Health: 193-> 332  
+* Speed: 5 -> 7  
+* Desired Attack Distance Range: 2/2.4 -> 1/1.4  
+
+**Thunder Golem**  
+* Health: 193 -> 248  
+* Speed: 5 -> 7  
+* Melee Attack  Damage: 10 -> 28  
+* Desired Attack Distance Range: 2/2.4 -> 1/1.5  
+
+**Firesteel Golem**  
+* Health: 224 -> 304  
+* Speed: 5 -> 7  
+* Desired Attack Distance Range: 2/2.4 -> 1/1.4  
+* Melee Attack Damage: -> 34  
+---
+
 # 25th of January
 
 ## 🏆 Skills & Item Rewards
