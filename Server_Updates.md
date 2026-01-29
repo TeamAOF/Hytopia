@@ -36,9 +36,9 @@ Achievements turn everyday play into a mini victory hunt! Tiny goals, big dopami
 *   **Master Cape moved to Total Level 1500** - The Master Cape is now a long-term goal awarded at Total Level 1500 instead of 1000
 
 ### Bug Fixes
-* **Fixed reward claiming not targeting the correct reward** - Claim buttons now reliably trigger the correct reward. The rewards page has been rebuilt with a card grid layout where each reward has its own dedicated claim button.
-* Fixed player naming issues within the market UI.
-* Fixed inconsistent searching in market.
+* Fixed reward claiming not targeting the correct reward
+* Fixed player naming issues within the market UI
+* Fixed inconsistent searching in market
 ---
 
 # 26th of January
