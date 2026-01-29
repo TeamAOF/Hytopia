@@ -28,6 +28,24 @@ Achievements turn everyday play into a mini victory hunt! Tiny goals, big dopami
 * **Health Bonuses** - All capes grant bonus health (+14 to +28), scaling with the cape's combat relevance
 * **Master Cape is the best cape** - 18% Physical/Projectile resistance, +28 Health, +30 Mana, and +4% to all damage types (Light, Charged, Signature)
 
+# 🐱 Cats – Tameable Cat Companion
+Multiple cat breeds that can be tamed, named, and commanded. Cats can follow you on your adventures or stay at home as a cozy companion. Each cat supports multiple behavior states and animations, making them feel alive and responsive.
+
+## Features
+* Seven cat breeds: Black Cat, Calico, Gray Tabby, Orange Tabby, Siamese, Tuxedo, Kitten
+* Taming system using fish
+* Automatic cat naming with unique names for each cat
+* Full command-based interaction via /cat
+* Custom cat names with /cat name
+* Cat ownership limits configurable via permissions
+* Multiple behavior states: sitting, following, waiting, wandering, sleeping, playing, searching
+* Matching animations for each behavior
+* Cat sounds
+* Cat Bed item for assigned sleeping spots
+* Item consumption for taming and feeding (items are consumed from the player's inventory)
+
+# General
+
 ### Changes
 *   **Mastering a skill now rewards a global XP boost token** - Reaching level 100 in any skill now awards a 1.25x All-Skill Global XP Boost (30 min) token instead of the previous personal skill-specific boost. When activated, this boost benefits every player on the server across all skills
 *   Celebrating mastery is now a server-wide event - your achievement helps everyone!
