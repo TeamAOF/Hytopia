@@ -18,6 +18,8 @@ Achievements turn everyday play into a mini victory hunt! Tiny goals, big dopami
 * Titles come in various rarities with unique colors
 
 # 🔰 Skill Mastery Capes
+You don’t have to explain it; the cape already does. It’s pride without noise, confidence without words, and the simple joy of knowing you finished what you started
+
 * **17 Capes Total** - One for each of the 16 skills + a Master Cape for total level 1000
 * **Reward-Only** - Automatically awarded at level 100 through the Item Rewards system
 * **Custom "Mastery Cape" quality** - Gold text with legendary drop particles
@@ -29,7 +31,7 @@ Achievements turn everyday play into a mini victory hunt! Tiny goals, big dopami
 * **Master Cape is the best cape** - 18% Physical/Projectile resistance, +28 Health, +30 Mana, and +4% to all damage types (Light, Charged, Signature)
 
 # 🐱 Cats – Tameable Cat Companion
-Multiple cat breeds that can be tamed, named, and commanded. Cats can follow you on your adventures or stay at home as a cozy companion. Each cat supports multiple behavior states and animations, making them feel alive and responsive.
+Multiple cat breeds that can be tamed, named, and commanded. Cats can follow you on your adventures or stay at home as a cozy companion. Each cat supports multiple behavior states and animations, making them feel alive and responsive
 
 ## Features
 * Seven cat breeds: Black Cat, Calico, Gray Tabby, Orange Tabby, Siamese, Tuxedo, Kitten
