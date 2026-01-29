@@ -17,6 +17,17 @@ Achievements turn everyday play into a mini victory hunt! Tiny goals, big dopami
 * Select your active title via the Title Selection UI (/titles)
 * Titles come in various rarities with unique colors
 
+# 🔰 Skill Mastery Capes
+* **17 Capes Total** - One for each of the 16 skills + a Master Cape for total level 1000
+* **Reward-Only** - Automatically awarded at level 100 through the Item Rewards system
+* **Custom "Mastery Cape" quality** - Gold text with legendary drop particles
+* **Effectively Indestructible** - 9999 durability
+* **Capes**: Mining, Woodcutting, Excavation, Harvesting, Swords, Daggers, Polearms, Staves, Axes, Blunt, Archery, Unarmed, Block, Acrobatics, Crafting, Building, Master
+* **Armor Stats** - Each mastery cape has unique attributes themed to its skill, making them functional gear on top of prestige cosmetics
+* **Damage Resistance** - All capes provide physical and projectile damage resistance (8-18%), surpassing Epic-tier chest armor
+* **Health Bonuses** - All capes grant bonus health (+14 to +28), scaling with the cape's combat relevance
+* **Master Cape is the best cape** - 18% Physical/Projectile resistance, +28 Health, +30 Mana, and +4% to all damage types (Light, Charged, Signature)
+
 ### Changes
 *   **Mastering a skill now rewards a global XP boost token** - Reaching level 100 in any skill now awards a 1.25x All-Skill Global XP Boost (30 min) token instead of the previous personal skill-specific boost. When activated, this boost benefits every player on the server across all skills
 *   Celebrating mastery is now a server-wide event - your achievement helps everyone!
@@ -28,24 +39,6 @@ Achievements turn everyday play into a mini victory hunt! Tiny goals, big dopami
 * **Fixed reward claiming not targeting the correct reward** - Claim buttons now reliably trigger the correct reward. The rewards page has been rebuilt with a card grid layout where each reward has its own dedicated claim button.
 * Fixed player naming issues within the market UI.
 * Fixed inconsistent searching in market.
----
-
-# 29th of January
-
-## 🔰 Skill Mastery Capes - Cosmetic cape armor awarded for reaching level 100
-* **17 Capes Total** - One for each of the 16 skills + a Master Cape for total level 1000
-* **Reward-Only** - Automatically awarded at level 100 through the Item Rewards system
-* **Custom "Mastery Cape" quality** - Gold text with legendary drop particles
-* **Effectively Indestructible** - 9999 durability
-* **Capes**: Mining, Woodcutting, Excavation, Harvesting, Swords, Daggers, Polearms, Staves, Axes, Blunt, Archery, Unarmed, Block, Acrobatics, Crafting, Building, Master
-* **Armor Stats** - Each mastery cape has unique attributes themed to its skill, making them functional gear on top of prestige cosmetics
-* **Damage Resistance** - All capes provide physical and projectile damage resistance (8-18%), surpassing Epic-tier chest armor
-* **Health Bonuses** - All capes grant bonus health (+14 to +28), scaling with the cape's combat relevance
-* **Master Cape is the best cape** - 18% Physical/Projectile resistance, +28 Health, +30 Mana, and +4% to all damage types (Light, Charged, Signature)
-
-### Bug Fixes
-* Fixed skill rewards not being given out correctly
-* Fixed /nick command
 ---
 
 # 26th of January
