@@ -1,5 +1,37 @@
 # 29th of January
 
+# ⭐ Achievement System
+Achievements turn everyday play into a mini victory hunt! Tiny goals, big dopamine, and that yes! moment when it pops 🎉
+
+## 200+ Achievements
+* **Combat:** Monster hunting chains, boss kills, PvP milestones, specific creature hunts
+* **Progression:** Mining, crafting, building chains with tiered rewards
+* **Exploration:** Zone discovery, distance traveled, world exploration
+* **Social:** Chat milestones, playtime achievements, community engagement
+* **Husbandry:** Animal taming, fishing, farming progression
+* **Secret:** Hidden achievements with funny references (Chicken Slayer, Darwin Award, Leeroy Jenkins…)
+
+## 80+ Titles
+* Unlock titles by completing achievements
+* Display titles above your name or as chat prefix
+* Select your active title via the Title Selection UI (/titles)
+* Titles come in various rarities with unique colors
+
+### Changes
+*   **Mastering a skill now rewards a global XP boost token** - Reaching level 100 in any skill now awards a 1.25x All-Skill Global XP Boost (30 min) token instead of the previous personal skill-specific boost. When activated, this boost benefits every player on the server across all skills
+*   Celebrating mastery is now a server-wide event - your achievement helps everyone!
+*   **Storm Leather & Storm Hide added to item rewards** - New rare crafting materials available at levels 80 and 100 for Defense, Daggers, Archery, Acrobatics, Unarmed, Harvesting, and Crafting, plus Total Level milestones
+*   **Reduced Total Level 350 rewards** - Material quantities rebalanced to better match the progression stage
+*   **Master Cape moved to Total Level 1500** - The Master Cape is now a long-term goal awarded at Total Level 1500 instead of 1000
+
+### Bug Fixes
+* **Fixed reward claiming not targeting the correct reward** - Claim buttons now reliably trigger the correct reward. The rewards page has been rebuilt with a card grid layout where each reward has its own dedicated claim button.
+* Fixed player naming issues within the market UI.
+* Fixed inconsistent searching in market.
+---
+
+# 29th of January
+
 ## 🔰 Skill Mastery Capes - Cosmetic cape armor awarded for reaching level 100
 * **17 Capes Total** - One for each of the 16 skills + a Master Cape for total level 1000
 * **Reward-Only** - Automatically awarded at level 100 through the Item Rewards system
