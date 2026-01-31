@@ -1,3 +1,50 @@
+# 31th of January
+
+# 🗡️ Dodging 
+A combat reimplementation that replaces blocking with dodging when wielding daggers or bows
+
+* **Dodge** - By pressing the right-mouse button (originally block-button) you can now dodge (with i-frames).
+* **Air-Dashing** - Dodging can be done while on air.
+* **Attack-Cancelling** - Dodging can be done to cancel all forms of attacks or actions.
+
+# ☠️ Elite Mobs
+Adding modifiers to hostile mobs indicated by affixes or visual effects. When a mob spawns, it has a chance to roll one or more of the below traits
+
+## Affixes
+* **Berserker:** Damage output ramps up as the mob's HP gets lower.
+* **Bombardier:** Tosses explosive projectiles at players within range.
+* **Frost:** Attacks apply a slowing effect; has the potential to freeze.
+* **Infernal:** Fire immunity and applies burn on hit.
+* **Launcher:** Attacks knock you back significantly.
+* **Magnetic:** Periodically drags nearby players toward the mob.
+* **Swift:** Moves 50% faster than normal.
+* **Splitting:** Breaks into two smaller versions of itself when killed.
+* **Stoneskin:** Flat 25% damage reduction from all sources.
+* **Vampire:** Heals itself for 50% of the damage it deals.
+* **Venomous:** Applies poison on attack.
+* **Volatile:** Explodes instantly upon death.
+
+# 👹 Raids
+Place a Raid Totem anywhere in the world, activate it, and defend against raids from enemies that scale with your location and party size. Defeat all enemies to claim zone-specific loot chests filled with valuable resources!
+
+<img width="850" height="478" alt="image" src="https://github.com/user-attachments/assets/bcbe1786-602c-47bd-a669-0375d1f4653d"/>
+
+# 🎣 Fishing 
+Get ya rods ready! The fishing minigame is here!
+
+* Wide variety of new fish to hytale's seas, rivers and other aquatic environments, making the waters feel more alive and diverse
+
+# 💴 Trading 
+A secure trading system, allowing players to exchange items safely through a dedicated UI. Prevent theft and trade with confidence!
+
+* Sends a trade request to the specified player.
+``/trade <playerName>``
+
+### Changes
+* Added a nickname changer UI for those with permission
+``/nick``
+---
+
 # 29th of January
 
 # ⭐ Achievement System
