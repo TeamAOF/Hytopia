@@ -1,3 +1,20 @@
+# 4th of February
+
+## New Essentials
+Improved commands & simplicity
+
+**Changes**
+* Migrated all homes to new plugin
+* Less spammy join/leave messages
+* Added a first join message for new players, be nice to them yall!
+* Improved RTP checks
+* Added warmup timers for commands, no more easy escapes
+
+**Fixes**
+* /back now works as intended
+* Fixed double leave messages
+---
+
 # 31th of January
 
 # 🗡️ Dodging 
