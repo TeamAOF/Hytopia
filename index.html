@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hytale Skilling Codex</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    :root {
+      --bg: #0a1418;
+      --panel: #13252d;
+      --panel-dark: #0b1a20;
+      --accent: #5fd3c6;
+      --accent-soft: #9ff0e6;
+      --gold: #f2c879;
+      --text: #eaf9f7;
+      --muted: #a7c7c3;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      background:
+        linear-gradient(to bottom, rgba(10,20,24,0.85), rgba(10,20,24,0.95)),
+        url('https://i.imgur.com/T4IT8Qp.png') center / cover fixed no-repeat;
+      color: var(--text);
+      text-align: center;
+    }
+
+    header {
+      padding: 26px 20px;
+      background: linear-gradient(to bottom, rgba(25,55,65,0.9), rgba(10,30,36,0.95));
+      border-bottom: 2px solid var(--accent);
+      box-shadow: inset 0 -8px 20px rgba(0,0,0,0.6);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+      letter-spacing: 1px;
+      color: var(--gold);
+      text-shadow: 0 0 12px rgba(245,201,122,0.6);
+    }
+
+    header p {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    nav {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 16px 18px;
+      justify-items: center;
+      padding: 30px 26px 34px;
+      background: linear-gradient(to bottom, rgba(18,45,52,0.9), rgba(10,26,32,0.95));
+      border-bottom: 2px solid #2a6f78;
+      backdrop-filter: blur(6px);
+    }
+
+    nav button {
+      background: linear-gradient(to bottom, #1f3c47, #132a33);
+      color: var(--text);
+      border: 2px solid #2e6a7a;
+      border-radius: 16px;
+      padding: 14px 10px 16px;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 0.95rem;
+      letter-spacing: 0.4px;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.15), 0 0 14px rgba(63,208,201,0.25);
+      transition: all 0.25s ease;
+      position: relative;
+      width: 140px;
+      height: 88px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    nav button::before {
+      content: none;
+    }
+
+    nav button:hover {
+      background: linear-gradient(to bottom, #3fd0c9, #1fa6b2);
+      color: #062026;
+      box-shadow: 0 0 14px rgba(63,208,201,0.8);
+      transform: translateY(-1px);
+    }
+
+    nav button.active {
+      background: linear-gradient(to bottom, #f5c97a, #d9a84d);
+      color: #2a220e;
+      border-color: #f5c97a;
+      box-shadow: 0 0 18px rgba(245,201,122,0.8);
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 28px 20px;
+    }
+
+    .skill {
+      display: none;
+      animation: fadeIn 0.25s ease;
+    }
+
+    .skill.active { display: block; }
+
+    .skill h2 {
+      margin-top: 0;
+      font-size: 1.8rem;
+      color: var(--accent-soft);
+      text-shadow: 0 0 12px rgba(125,230,255,0.6);
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .rune-wrap {
+      display: inline-flex;
+      width: 32px;
+      height: 32px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .nav-rune {
+      width: 26px;
+      height: 26px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .nav-rune .rune {
+      width: 100%;
+      height: 100%;
+    }
+
+    .rune {
+      width: 100%;
+      height: 100%;
+      fill: none;
+      stroke: var(--accent-soft);
+      stroke-width: 2;
+      filter: drop-shadow(0 0 6px rgba(125,230,255,0.7));
+      animation-duration: 3.5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      transition: transform 0.25s ease, filter 0.25s ease, stroke 0.25s ease;
+    }
+
+    .rune.crafting { animation-name: runeRotate; }
+    .rune.mining { animation-name: runeBob; }
+    .rune.farming { animation-name: runeBloom; }
+    .rune.woodcutting { animation-name: runeChop; }
+    .rune.cooking { animation-name: runeHeat; }
+    .rune.magic { animation-name: runePulse; }
+    .rune.defense { animation-name: runeShield; }
+    .rune.ranged { animation-name: runeAim; }
+    .rune.melee { animation-name: runeSlash; }
+
+    .skill h2:hover .rune {
+      transform: scale(1.15) rotate(-5deg);
+      stroke: var(--gold);
+      filter: drop-shadow(0 0 12px rgba(245,201,122,0.9));
+    }
+
+    .skill p.desc {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 22px;
+    }
+
+    .levels {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .level {
+      background: linear-gradient(to bottom, rgba(28,62,72,0.85), rgba(14,34,40,0.95));
+      border: 1px solid #3a8c93;
+      border-radius: 14px;
+      padding: 14px 18px;
+      box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.1),
+        0 0 18px rgba(0,0,0,0.45);
+      position: relative;
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+    }
+
+    .level.mastery {
+      border-color: var(--gold);
+      box-shadow: 0 0 24px rgba(245,201,122,0.7);
+      animation: masteryAura 3s infinite;
+    }
+
+    .level h3 {
+      margin: 0;
+      min-width: 90px;
+      text-align: left;
+      color: var(--gold);
+      font-size: 1rem;
+      text-shadow: 0 0 10px rgba(245,201,122,0.7);
+      flex-shrink: 0;
+    }
+
+    .level.mastery h3 {
+      animation: masteryPulse 2.5s infinite;
+    }
+
+    .level ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 8px;
+    }
+
+    .level li {
+      padding: 7px 16px;
+      background: linear-gradient(to bottom, #2a4b5a, #182f38);
+      border: 1px solid #4fa3b8;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      color: #e6f6fb;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.18), 0 0 6px rgba(79,163,184,0.25);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
+
+    .level li::before {
+      content: "✦";
+      margin-right: 6px;
+      color: var(--accent-soft);
+      font-size: 0.75rem;
+    }
+
+    .level li:hover {
+      background: linear-gradient(to bottom, #3fd0c9, #1fa6b2);
+      color: #062026;
+      transform: translateY(-2px) scale(1.05);
+      box-shadow: 0 0 16px rgba(63,208,201,0.9);
+    }
+
+    footer {
+      text-align: center;
+      padding: 22px;
+      color: var(--muted);
+      border-top: 1px solid #2a6f78;
+      background: linear-gradient(to bottom, rgba(10,26,32,0.95), rgba(6,16,20,0.98));
+      font-size: 0.85rem;
+      backdrop-filter: blur(4px);
+    }
+
+    @keyframes masteryPulse {
+      0%,100% { text-shadow: 0 0 8px rgba(245,201,122,0.6); }
+      50% { text-shadow: 0 0 20px rgba(245,201,122,1); }
+    }
+
+    @keyframes masteryAura {
+      0%,100% { box-shadow: 0 0 18px rgba(245,201,122,0.5); }
+      50% { box-shadow: 0 0 32px rgba(245,201,122,0.9); }
+    }
+
+    @keyframes runeRotate {
+      0% { transform: rotate(0deg); }
+      50% { transform: rotate(6deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+    @keyframes runeBob {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(-4px); }
+    }
+
+    @keyframes runeBloom {
+      0%,100% { transform: scale(1); }
+      50% { transform: scale(1.12); }
+    }
+
+    @keyframes runeChop {
+      0%,100% { transform: rotate(0deg); }
+      50% { transform: rotate(-8deg); }
+    }
+
+    @keyframes runeHeat {
+      0%,100% { filter: drop-shadow(0 0 6px rgba(255,150,100,0.6)); }
+      50% { filter: drop-shadow(0 0 14px rgba(255,180,120,1)); }
+    }
+
+    @keyframes runePulse {
+      0%,100% { transform: scale(1); }
+      50% { transform: scale(1.18); }
+    }
+
+    @keyframes runeShield {
+      0%,100% { transform: scale(1); }
+      50% { transform: scale(0.9); }
+    }
+
+    @keyframes runeAim {
+      0%,100% { transform: translateX(0); }
+      50% { transform: translateX(4px); }
+    }
+
+    @keyframes runeSlash {
+      0% { transform: rotate(0deg); }
+      50% { transform: rotate(12deg); }
+      100% { transform: rotate(0deg); }
+    }
+      50% { filter: drop-shadow(0 0 10px rgba(125,230,255,0.9)); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Hytopia Skilling Codex</h1>
+  <p>A complete progression guide</p>
+</header>
+
+<nav id="skillNav"></nav>
+
+<main id="content"></main>
+
+<footer>
+  🏆 Reach Level 100 in any skill to earn its Mastery Skillcape.
+</footer>
+
+<script>
+const skillIcons = {
+  "Crafting": "⚒️",
+  "Mining": "⛏️",
+  "Farming": "🌱",
+  "Woodcutting": "🌲",
+  "Cooking": "🍳",
+  "Magic": "🪄",
+  "Defense": "🛡️",
+  "Ranged": "🏹",
+  "Melee": "⚔️"
+};
+
+const skills = {
+  "Crafting": {
+    desc: "Create tools, weapons, armor, furniture, and powerful utility items.",
+    levels: {
+      1: ["Crude Tools","Crude Weapons","Fishing Rod","Furnace","Crafting Benches","Ingots","Sand","Campfire","Crude Bed","Small Chest","Leathers","Repair Kit"],
+      5: ["Copper Tools","Copper Weapons","Copper Armor","Fishing Trap","Wooden Beds","Watering Can"],
+      10: ["Iron Tools","Iron Weapons","Iron Armor","Copper Chest","Fish Bait"],
+      15: ["Dungeon of Fear I (Fragment)","Iron Chest","Crusher"],
+      20: ["Thorium Tools","Thorium Weapons","Thorium Armor","Teleporter","Gold Chest"],
+      25: ["Thorium Chest"],
+      30: ["Cobalt Tools","Cobalt Weapons","Cobalt Armor","Waystone"],
+      35: ["Dungeon of Fear II (Fragment)"],
+      40: ["Adamantite Tools","Adamantite Weapons","Adamantite Armor","Cobalt Chest"],
+      45: ["Vampiric Daggers","Adamantite Chest"],
+      50: ["Mithril Tools","Mithril Weapons","Mithril Armor"],
+      55: ["Endgame's Workbench","Wan’s Wonder Weapons","Advanced Glider","Mithril Chest","Impressio","Noctivagus","Aetherflux Blade"],
+      60: ["Onyxium Tools","Onyxium Weapons","Onyxium Armor"],
+      65: ["Void-Powered Glider","Onyxium Chest","Whirlwinds","Dreadreap"],
+      70: ["Prisma Armor"],
+      75: ["Prisma Chest"],
+      100: ["Mastery Skillcape"]
+    }
+  },
+
+  "Mining": {
+    desc: "Gather ores, gems, and stone resources from the world.",
+    levels: {
+      1: ["Crude Pickaxe","Stone","Sandstone","Calcite","Mossy Stone","Clay","Pebbles","Gravel","Cobblestone"],
+      3: ["Copper Ore"],
+      5: ["Copper Pickaxe","Iron Ore","Sapphire","Emerald","Diamond"],
+      10: ["Iron Pickaxe","Silver Ore"],
+      15: ["Thorium Ore","Topaz","Voidstone","Zephy"],
+      20: ["Thorium Pickaxe","Gold Ore"],
+      25: ["Cobalt Ore","Ruby"],
+      30: ["Cobalt Pickaxe","Adamantite Ore"],
+      35: ["Prisma Ore"],
+      40: ["Adamantite Pickaxe","Mithril Ore"],
+      50: ["Mithril Pickaxe","Onyxium Ore"],
+      60: ["Onyxium Pickaxe"],
+      100: ["Mastery Skillcape"]
+    }
+  },
+
+  "Farming": {
+    desc: "Grow crops and trees. High levels unlock Eternal (Orbis) crops.",
+    levels: {
+      1: ["Sunflower Seed Bag"],
+      2: ["Wheat Seed Bag"],
+      4: ["Lettuce Seed Bag"],
+      6: ["Beech Sapling"],
+      8: ["Carrot Seed Bag"],
+      10: ["Corn Seed Bag"],
+      20: ["Cauliflower Seed Bag","Capture Crate"],
+      22: ["Turnip Seed Bag"],
+      24: ["Birch Sapling"],
+      26: ["Chicken Coop"],
+      30: ["Aubergine Seed Bag"],
+      32: ["Pumpkin Seed Bag"],
+      34: ["Apple Sapling"],
+      36: ["Ash Sapling","Fishing Trap"],
+      38: ["Oak Sapling"],
+      39: ["Spruce Sapling","Frozen Spruce Sapling"],
+      40: ["Tomato Seed Bag"],
+      42: ["Chilli Seed Bag"],
+      45: ["Redwood Sapling","Eternal Wheat Seed Bag (Orbis)"],
+      47: ["Eternal Lettuce Seed Bag (Orbis)"],
+      50: ["Cotton Seed Bag","Eternal Carrot Seed Bag (Orbis)"],
+      52: ["Rice Seed Bag","Eternal Corn Seed Bag (Orbis)"],
+      55: ["Cedar Sapling","Eternal Cauliflower Seed Bag (Orbis)"],
+      57: ["Eternal Turnip Seed Bag (Orbis)"],
+      60: ["Onion Bulb","Eternal Aubergine Seed Bag (Orbis)"],
+      62: ["Potato Sprout","Eternal Pumpkin Seed Bag (Orbis)"],
+      65: ["Dry Sapling","Eternal Tomato Seed Bag (Orbis)","Blood Rose","Storm Thistle","Azure Fern"],
+      67: ["Eternal Chilli Seed Bag (Orbis)"],
+      70: ["Azure Kelp"],
+      72: ["Eternal Cotton Seed Bag (Orbis)","Palm Sapling"],
+      74: ["Eternal Rice Seed Bag (Orbis)"],
+      78: ["Eternal Onion Bulb (Orbis)"],
+      80: ["Eternal Potato Sprout (Orbis)"],
+      100: ["Mastery Skillcape"]
+    }
+  },
+
+  "Woodcutting": {
+    desc: "Harvest logs used in Crafting and Construction.",
+    levels: {
+      1: ["Crude Hatchet","Oak Log","Birch Log","Pine Log"],
+      2: ["Beech Log","Aspen Log","Palo Log"],
+      3: ["Bamboo Log","Banyan Log","Dry Log"],
+      5: ["Copper Hatchet","Maple Log"],
+      7: ["Fir Log","Cedar Log"],
+      10: ["Iron Hatchet"],
+      13: ["Sallow Tree"],
+      16: ["Palm Tree Log","Jungle Log"],
+      18: ["Windwillow Log"],
+      20: ["Thorium Hatchet"],
+      23: ["Redwood Log","Camphor Log"],
+      25: ["Azure Log"],
+      27: ["Blue Fig Log"],
+      30: ["Cobalt Hatchet"],
+      32: ["Gumboab Log"],
+      36: ["Spiral Log","Stormbark Log"],
+      38: ["Wild Wisteria Log"],
+      40: ["Adamantite Hatchet"],
+      42: ["Petrified Log","Poisoned Log"],
+      44: ["Crystal Log"],
+      46: ["Fire Log","Ice Log"],
+      50: ["Mithril Hatchet"],
+      60: ["Onyxium Hatchet"],
+      100: ["Mastery Skillcape"]
+    }
+  },
+
+  "Magic": {
+    desc: "Govern staff usage and spellbook access.",
+    levels: {
+      1: ["Copper Staff"],
+      10: ["Iron Staff"],
+      15: ["Poison Spellbook","Necromantic Armor"],
+      20: ["Thorium Staff","Necronomicon"],
+      25: ["Ice Spellbook","Fire Spellbook"],
+      30: ["Cobalt Staff","Flaming Skull Pet"],
+      35: ["Necromancer's One-Handed Mace"],
+      40: ["Adamantite Staff"],
+      45: ["Healing Spellbook"],
+      50: ["Mithril Staff","Skeleton Horse"],
+      60: ["Onyxium Staff"],
+      100: ["Mastery Skillcape"]
+    }
+  },
+
+  "Defense": {
+    desc: "Determines armor effectiveness and survivability.",
+    levels: {
+      5: ["Copper Armor"],
+      10: ["Iron Armor"],
+      13: ["Trok Armor"],
+      15: ["Doomed Outlander Shield","Necromantic Armor"],
+      17: ["Ancient Steel Armor"],
+      20: ["Thorium Armor"],
+      30: ["Cobalt Armor"],
+      40: ["Adamantite Armor"],
+      50: ["Mithril Armor"],
+      60: ["Onyxium Armor"],
+      70: ["Prisma Armor"],
+      100: ["Mastery Skillcape"]
+    }
+  },
+
+  "Ranged": {
+    desc: "Govern bows, crossbows, and ranged weapons.",
+    levels: {
+      1: ["Crude Shortbow"],
+      5: ["Copper Shortbow"],
+      10: ["Iron Shortbow","Iron Crossbow"],
+      15: ["Ancient Steel Shortbow"],
+      20: ["Thorium Shortbow"],
+      25: ["Outlander Doomed Shortbow"],
+      30: ["Cobalt Shortbow"],
+      35: ["Ancient Steel Crossbow"],
+      40: ["Adamantite Shortbow"],
+      45: ["Blunderbuss"],
+      50: ["Mithril Shortbow"],
+      55: ["Impressio"],
+      60: ["Onyxium Shortbow"],
+      100: ["Mastery Skillcape"]
+    }
+  },
+
+  "Melee": {
+    desc: "Govern close-combat weapon proficiency.",
+    levels: {
+      1: ["Crude Weapons"],
+      5: ["Copper Weapons"],
+      10: ["Iron Weapons"],
+      13: ["Trork Weapons"],
+      15: ["Bone Sword","Doomed Outlander Daggers","Feran Bone Daggers"],
+      17: ["Ancient Steel Weapons"],
+      20: ["Thorium Weapons"],
+      30: ["Cobalt Weapons"],
+      40: ["Adamantite Weapons"],
+      45: ["Van Helsing","Hellfire"],
+      50: ["Mithril Weapons"],
+      55: ["Wan’s Weapons","Aetherflux Blade","Noctivagus"],
+      58: ["Azaroth Vampire Longsword"],
+      60: ["Bloodbath","Onyxium Weapons"],
+      62: ["Vine-Twined Daggers"],
+      65: ["Dreadreap","Whirlwinds"],
+      100: ["Mastery Skillcape"]
+    }
+  },
+
+  "Cooking": {
+    desc: "Prepare meals and buffs from gathered ingredients.",
+    levels: {
+      0: ["Any Meat"],
+      5: ["Any Fish"],
+      10: ["Mushroom Skewer"],
+      12: ["Fruit Skewer"],
+      15: ["Meat Skewer"],
+      17: ["Vegetable Skewer"],
+      20: ["Mushroom Salad"],
+      22: ["Wild Berry Salad"],
+      25: ["Caesar Salad"],
+      30: ["Bread"],
+      35: ["Popcorn"],
+      40: ["Pies"],
+      100: ["Mastery Skillcape"]
+    }
+  }
+};
+
+const nav = document.getElementById("skillNav");
+const content = document.getElementById("content");
+
+function renderSkill(name, data, active = false) {
+  const section = document.createElement("section");
+  section.className = "skill" + (active ? " active" : "");
+  section.id = name;
+
+  section.innerHTML = `
+    <h2><span class=\"rune-wrap\">${skillIcons[name] || ''}</span>${name}</h2>
+    <p class=\"desc\">${data.desc}</p>
+    <div class=\"levels\">
+      ${Object.entries(data.levels).map(([lvl, items]) => `
+        <div class=\"level ${lvl == 100 ? 'mastery' : ''}\">
+          <h3>Level ${lvl}</h3>
+          <ul>
+            ${items.map(i => `<li>${i}</li>`).join("")}
+          </ul>
+        </div>
+      `).join("")}
+    </div>
+  `;
+
+  content.appendChild(section);
+}
+
+Object.entries(skills).forEach(([name, data], index) => {
+  const btn = document.createElement("button");
+  btn.innerHTML = `<span class=\"nav-rune\">${skillIcons[name] || ''}</span><span class=\"nav-label\">${name}</span>`;
+  if (index === 0) btn.classList.add("active");
+
+  btn.onclick = () => {
+    document.querySelectorAll("nav button").forEach(b => b.classList.remove("active"));
+    document.querySelectorAll(".skill").forEach(s => s.classList.remove("active"));
+    btn.classList.add("active");
+    document.getElementById(name).classList.add("active");
+  };
+
+  nav.appendChild(btn);
+  renderSkill(name, data, index === 0);
+});
+</script>
+
+</body>
+</html>
