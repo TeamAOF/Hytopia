@@ -1,3 +1,42 @@
+# 16th of February
+
+## 🐟 Fishing
+Added Fishing Skill, weights, length & leaderboards
+
+### Features
+* Craft a Fishing Rod and Fish Bag at Workbench > Survival.
+* Fish in open water with a tuned bobber and bite/reel timing.
+* Catch fish based on where you are fishing (freshwater/saltwater areas).
+* Catch fish you see nearby in water, or get a fish from local catch pools.
+* Store catches in a dedicated Fish Bag so your inventory fills up less quickly.
+* Build personal bests and compete for global/server records.
+* Use /hfleaders to view fishing leaderboards in-game.
+
+## 👹 Dungeons
+**Major Dungeons** adds new custom dungeons to the game. These dungeons are instanced and accessible through the **Ancient Portal**, which opens after reaching 100 Memories. In the dungeons, you'll encounter completely **New Enemies and Bosses**. And as a reward for completing dungeons and killing the final bosses, you can receive a **Unique Weapons and Armors**, which drops at a certain rate, just like in Terraria.
+<img width="850" height="155" alt="image" src="https://github.com/user-attachments/assets/c84f510e-412b-46c8-8458-49057c0a6d5e" />  
+
+**Dungeon of Fear** is the first in the Major Dungeons series. You'll gradually descend deeper and deeper into the **Kingdom of Baal**. You'll visit various parts of his kingdom and encounter his deadly minions. **If you fail the final boss of a level, you'll have to start over from the beginning**, as the one-use crystals required for entering subsequent dungeons after the first drop only from bosses.
+
+<img width="850" height="418" alt="image" src="https://github.com/user-attachments/assets/14a0dd65-a41c-4c5a-b53c-7a7da39f20d6" />
+
+<img width="850" height="155" alt="image" src="https://github.com/user-attachments/assets/8c80cf8c-786d-4be3-a9bc-6dccd69645d6" />
+
+This mod adds a new merchant to the game - a **Nameless God**. He offers **unique Weapons, Armor, and various Artifacts**. He only accepts **Dark Coins** as payment, which can **only be found in dungeons**.
+<img width="850" height="360" alt="image" src="https://github.com/user-attachments/assets/48ce9234-3b96-42da-9235-67688242eb28" />
+
+
+**Changes**
+* Improved Skills UI
+* Added kitchen furniture sets, tables and chairs
+* Added functional refrigerator for food storage and kitchen stove with cooking functionality
+* Added tea sets with functional teapots
+* Added Violet's Wardrobe
+
+**Fixes**
+* Fixed invalid entries in the market crashing the client
+---
+
 # 4th of February
 
 ## New Essentials
