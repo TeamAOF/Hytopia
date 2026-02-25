@@ -81,13 +81,6 @@
 1. Defeat early endgame bosses to unlock Mithril gear.
 2. Progress through mid-tier bosses to access Onyxium.
 3. Defeat the final boss to unlock Prisma-tier equipment.
----
-
-Got it 👍 Here’s a **cleaned-up version of the patch notes** with **all CurseForge links removed** and the following sections **fully removed**:
-
-* Compatibility Notes
-* Quality of Life & Misc
-* Admin & Configuration
 
 ---
 
