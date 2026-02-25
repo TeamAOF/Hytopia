@@ -1,3 +1,287 @@
+# 27th of February
+
+# ⚔️ End Game
+
+### 🗺️ Endgame Progression Expansion
+
+* Introduces new progression tiers:
+
+  * **Mithril**
+  * **Onyxium**
+  * **Prisma**
+
+---
+
+### 👹 Boss Encounters
+
+* **Dragon Frost**
+
+  * Multi-phase boss encounter with frost-based attacks.
+* **Hedera**
+
+  * Nature/poison-themed boss with root and area-control mechanics.
+* **Void Golem**
+
+  * Final endgame boss featuring multiple aggressive phases.
+* Boss fights include phase transitions with brief invulnerability windows.
+
+---
+
+### 💀 Wave Survival Mode — *Warden’s Trial*
+
+* New arena-style survival challenge.
+* 5 escalating wave difficulties.
+* Final boss waves unlock high-tier rewards.
+
+---
+
+### 🛠️ Equipment & Weapons
+
+* Adds **100+ new items**, including weapons, armor sets, and tools.
+* New gear progression:
+
+  * Adamantite → Mithril → Onyxium → Prisma
+* **Prisma-tier legendary weapons** with unique effects:
+
+  * Prisma Sword — summons spectral clones.
+  * Prisma Daggers — execute low-health targets.
+  * Prisma Pickaxe — fastest mining speed with a portable storage feature.
+* **Frostbite Blade**
+
+  * Applies freeze and slow effects to enemies.
+
+---
+
+### 🧪 New Mobs & NPCs
+
+* Adds elite enemies such as **Alpha Rex** and Void-themed casters.
+* 9+ new NPC types with custom behaviors and abilities.
+
+---
+
+### 🏦 Traders & World Additions
+
+* Hidden and dungeon-based traders offering rare items.
+* New endgame zones, including frozen dungeons with tiered loot.
+
+---
+
+## 🧩 Gameplay Changes
+
+### 🆙 Endgame Crafting
+
+* Introduces the **Endgame Workbench** with multiple upgrade tiers.
+* Unlocks crafting paths for Mithril, Onyxium, and Prisma equipment.
+* Adds keys and portal shards required to access endgame content.
+
+---
+
+### 🗝️ Progression Flow
+
+1. Defeat early endgame bosses to unlock Mithril gear.
+2. Progress through mid-tier bosses to access Onyxium.
+3. Defeat the final boss to unlock Prisma-tier equipment.
+---
+
+Got it 👍 Here’s a **cleaned-up version of the patch notes** with **all CurseForge links removed** and the following sections **fully removed**:
+
+* Compatibility Notes
+* Quality of Life & Misc
+* Admin & Configuration
+
+---
+
+# 🛠️ Reforging
+
+### 🚀 New Content
+
+**Progressive Reforging System**
+
+* Introduced the **Reforge Station**, a new placeable block used to enhance gear.
+* Press **F** while interacting with the station to open the reforging interface.
+* Weapons and armor can be reforged through **up to 10 levels** of progression.
+* Each level increases item power while also increasing cost and risk.
+
+**Reforging Interface**
+
+* Displays success chance, required materials, and currency cost before reforging.
+* Clear feedback on successful upgrades or failed attempts.
+
+---
+
+### 📈 Gameplay Changes
+
+**Item Enhancements**
+
+* Weapons gain additional **damage bonuses** per reforge level.
+* Armor gains additional **defense bonuses** per reforge level.
+* Bonuses scale progressively and stack with existing item stats.
+
+**Risk vs Reward System**
+
+* Each reforging attempt has a chance to fail.
+* Failed attempts may destroy the item, with partial material refunds depending on settings.
+* Optional protection allows reforging to reset the item’s level instead of destroying it.
+
+**Economy Integration**
+
+* Reforging requires both **materials** and **currency**.
+* Costs scale with each level to maintain long-term progression balance.
+
+---
+
+# <img width="40" height="40" alt="image" src="https://github.com/user-attachments/assets/9304a4c9-6f14-49b5-9236-08a537d789fb" /> Skill Bonus Balancing — Global Damage Scaling
+
+### Overview
+
+This update introduces a **unified, progressive damage scaling system** across **all combat styles**.
+The goal is to reduce early-game power spikes, control late-game damage stacking, and preserve long-term build progression.
+
+---
+
+## Global STAT_DAMAGE Changes
+
+### Affected Combat Styles
+
+The following now share **one identical damage progression curve**:
+
+* **Melee** (Swords, Daggers, Axes, Maces, Spears, etc.)
+* **Ranged** (Archery)
+* **Magic** (Staves)
+* **Unarmed** (if applicable)
+
+All `STAT_DAMAGE` bonuses—weapon-specific and *Damage (All)*—have been rebalanced accordingly.
+
+---
+
+### New Progressive Damage Curve (Rounded)
+
+| Tier | Previous Bonus | New Bonus |
+| ---- | -------------- | --------- |
+| 2    | +10%           | **+6%**   |
+| 3    | +15%           | **+8%**   |
+| 4    | +20%           | **+10%**  |
+| 5    | +25%           | **+10%**  |
+| 6    | +35%           | **+14%**  |
+| 7    | +50%           | **+16%**  |
+| 8    | +65%           | **+20%**  |
+| 9    | +75%           | **+20%**  |
+| 10    | +100%          | **+24%**  |
+
+* All values are **rounded to even numbers**
+* The same curve applies across **every combat tree**
+* No per-weapon exceptions
+
+---
+
+## Total Damage Impact
+
+| Build State            | Old System    | New System        |
+| ---------------------- | ------------- | ----------------- |
+| Full damage investment | +395% (×4.95) | **+128% (×2.28)** |
+
+---
+
+## Design Intent
+
+* **Early game:**
+  Damage progression is slower and more controlled, emphasizing gear, positioning, and player skill.
+
+* **Mid game:**
+  Damage increases steadily without sudden spikes.
+
+* **Late game:**
+  Full investment is still rewarding, but no longer trivializes enemies, defenses, or combat mechanics.
+
+---
+
+## Additional Notes
+
+* Critical chance, lifesteal, parry bonuses, XP bonuses, and non-damage stats are **unchanged**
+* This system is **future-proof**: new weapons automatically inherit the same curve
+* Combat style identity is preserved through **non-damage stats**, not raw scaling
+
+---
+
+# 🔮 Enchanting Balance Update
+
+This update significantly reworks **enchanting costs and progression** to better reflect power scaling and long-term progression.
+
+---
+
+## ⚙️ Enchantment Cost Scaling Overhaul
+
+### 📈 Exponential Cost Scaling
+
+* Enchantment scroll recipes now scale **exponentially by tier**:
+
+  * **Tier 1:** ×1 (unchanged)
+  * **Tier 2:** ×4
+  * **Tier 3:** ×9
+  * **Tier 4:** ×16
+* Applies to all scalable ingredients (essences, bars, crystals, plants, etc.)
+* All values are rounded **up** to whole numbers
+
+This makes higher-tier enchantments a meaningful investment rather than a linear upgrade.
+
+---
+
+## 🧵 Fabric Scrap (Cindercloth) Changes
+
+* Fabric_Scrap_Cindercloth now scales **linearly by tier** instead of remaining flat:
+
+  * **Tier 1:** 5
+  * **Tier 2:** 8
+  * **Tier 3:** 13
+  * **Tier 4:** 20
+* Keeps early enchanting accessible while discouraging mass high-tier crafting
+
+---
+
+## 💀 Tier 3 Enchantment Tax (New)
+
+All **Tier 3 enchantment scrolls** now require additional rare materials:
+
+* **+25 Void Essence**
+* Plus **one** of the following:
+
+  * **1 Emerald** (if the recipe did not already include gems)
+  * **1 Concentrated Life Essence** (if the recipe already uses gems)
+
+This change is intended to:
+
+* Slow Tier 3 enchantment spam
+* Force engagement with higher-end resource systems
+* Make Tier 3 a deliberate progression choice
+
+---
+
+## 🛠️ Enchanting Table Upgrade Scaling
+
+Enchanting table upgrades now follow the same tier-based scaling philosophy:
+
+### Upgrade Costs
+
+* **Upgrade 1 (Tier 1):** Unchanged
+* **Upgrade 2 (Tier 2):** Costs ×4
+* **Upgrade 3 (Tier 3):** Costs ×9
+
+### Upgrade 3 Additional Cost
+
+* **+25 Void Essence** added as a Tier 3 upgrade tax
+
+Single-count unique items (gems, Voidheart) are **not multiplied**.
+
+---
+
+## 🎯 Design Goals
+
+* Make enchanting progression feel **earned**, not spammed
+* Preserve early-game experimentation
+* Push Tier 3+ enchantments firmly into **late-game territory**
+* Improve long-term economy balance on servers
+---
+
 # 16th of February
 
 ## 🐟 Fishing
