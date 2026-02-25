@@ -273,6 +273,34 @@ Single-count unique items (gems, Voidheart) are **not multiplied**.
 * Preserve early-game experimentation
 * Push Tier 3+ enchantments firmly into **late-game territory**
 * Improve long-term economy balance on servers
+
+# 🧌 Elite Mobs 2.0
+
+### 🆕 New Features
+
+**Elite & Tiered Mob System**
+
+* Introduces **tier-based enemies** (Tier 1–5) with increasing health, damage, and difficulty.
+* Mobs now spawn with **randomized stats, armor, and weapons**, making encounters less predictable.
+
+**Dynamic Combat Abilities**
+
+* Certain mobs gain special abilities, including:
+
+  * **Charge Leap** – rapidly closes distance to players
+  * **Heal Leap** – restores health during combat
+  * **Summon Undead** – calls allied mobs to assist in battle
+
+**Enhanced Loot System**
+
+* Adds **tiered loot tables** with rarity-based drops.
+* Higher-tier mobs have improved chances to drop **powerful gear, consumables, and equipment**.
+* Enemies may drop the items they were using when defeated.
+
+**Visual Enhancements**
+
+* Tier indicators displayed on mob nameplates.
+* Elite mobs feature increased size and visual effects to reflect their strength.
 ---
 
 # 16th of February
