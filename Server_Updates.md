@@ -301,6 +301,70 @@ Single-count unique items (gems, Voidheart) are **not multiplied**.
 
 * Tier indicators displayed on mob nameplates.
 * Elite mobs feature increased size and visual effects to reflect their strength.
+
+---
+
+# 📜 **Hear Ye, Wayfarers of the Realm!** 🐎
+
+Word spreads along the trade roads and campfires burn late with rumors…
+**Nomad Tamers have arrived.**
+
+Wandering beast-masters have crossed into our lands, bringing with them ancient knowledge of how to **befriend, tame, and ride the wild creatures of the world**.
+
+---
+
+## 🌍 **New Creatures Roam the Wilds**
+
+The world now teems with new life. Keep your eyes open beyond the city walls:
+
+**Mounts of the Nomads**
+
+* Swift **Antelope** of the plains
+* Armored **Armadillo**, rolling through the dust
+* Mighty **Bison** and stubborn **Warthogs**
+* Graceful **Doe & Stag** of the forests
+* Towering **Bull & Cow Moose** of the cold wilds
+* Sun-soaked **Sand Lizards** of the dunes
+* Ancient **Tortoises**, slow but steadfast
+* Curious **Trillodons**
+* And even proud **Flamingos**, stalking the shallows
+
+Each beast has its own temperament… and its own favorite treat.
+
+---
+
+## 🍖 **The Art of Taming**
+
+The Nomads teach no spells or sorcery — only patience.
+
+* Offer a creature the food it loves
+* Watch for signs it’s willing to trust you
+* Earn its loyalty
+* Ride beside it as a true companion, not a master
+
+Those who carry the right food may find beasts following them willingly.
+
+✨ Look closely — creatures will show when your offering pleases them.
+
+---
+
+## 🐀 **A Small Companion**
+
+Travelers whisper of a clever little creature known as the **Raton**.
+
+* Fond of **Cheese**
+* Shy, but loyal to those who earn its trust
+* Will trail behind kind souls who treat it well
+
+---
+
+🏕️ **Choose your path, traveler.**  
+Will you cross the plains atop a bison?  
+Wander the forests with a stag at your side?  
+Or earn the trust of something rarer?  
+
+The wilds are watching.
+
 ---
 
 # 16th of February
