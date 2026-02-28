@@ -1,8 +1,8 @@
 # 2026-02-28
 
-## <img width="40" height="40" alt="image" src="https://github.com/user-attachments/assets/be955476-1ea3-4e56-8880-d1cd44fb01c6" /> Skill Updates  
+# <img width="40" height="40" alt="image" src="https://github.com/user-attachments/assets/be955476-1ea3-4e56-8880-d1cd44fb01c6" /> Skill Updates  
 
-### 🪄 Magic
+## 🪄 Magic
 Added Staff entries to Magic skill, using these now give XP:
 - Copper Staff: +8 Magic XP
 - Iron Staff: +12 Magic XP
@@ -12,12 +12,15 @@ Added Staff entries to Magic skill, using these now give XP:
 - Mithril Staff: +48 Magic XP
 - Onyxium Staff: +65 Magic XP
 
-### ⚔️ Combat
+**🐞 Bug Fix**
+- Fixed an issue where **Wands** and **Spellbooks** were incorrectly granting **Archery XP** instead of **Magic XP**.
+
+## ⚔️ Combat
 - Buffed Onyxium weapon XP from 55 XP > 65 XP
 - Added Prisma Dagger: +75 XP to Dagger skill
 - Added Prisma Sword: +75 XP to Sword skill
 
-### 🔧 Hotfix: Thorium & Cobalt XP Balance
+## 🔧 Hotfix: Thorium & Cobalt XP Balance
 
 * **Cobalt gear and ore now grant more XP**
 * **Thorium gear and ore now grant less XP**
