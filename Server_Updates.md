@@ -1,8 +1,42 @@
 # 2026-02-28
 
-# <img width="40" height="40" alt="image" src="https://github.com/user-attachments/assets/be955476-1ea3-4e56-8880-d1cd44fb01c6" /> Skill Updates  
+## ☠️ Elite Drops
 
-## 🪄 Magic
+Additional essences now dropping from **Elite mobs** alongside the existing Life Essence.
+
+### ✨ New Essences
+
+The following essences have been added to the **Elite mob loot pool**:
+
+* **Fire Essence**
+* **Ice Essence**
+* **Lightning Essence**
+* **Water Essence**
+* **Meat Essence**
+
+These essences drop **in addition to** Life Essence and do not replace it.
+
+### ⚖️ Drop Behavior
+
+* Drops are **tier-scaled** on Elite mobs
+* Lower tiers act as **rare teaser drops**
+* Higher tiers offer **more reliable access**
+* Life Essence remains the **core early-game essence**
+
+### 🎯 Design Goals
+
+* Reduce single-essence bottlenecks
+* Expand elemental and specialty crafting paths
+* Maintain early-game balance while enriching late-game rewards
+
+---
+
+If you want a **one-paragraph Discord version** or a **dev-only changelog**, I can spin that up too 👌
+
+
+## <img width="40" height="40" alt="image" src="https://github.com/user-attachments/assets/be955476-1ea3-4e56-8880-d1cd44fb01c6" /> Skill Updates  
+
+### 🪄 Magic
 Added Staff entries to Magic skill, using these now give XP:
 - Copper Staff: +8 Magic XP
 - Iron Staff: +12 Magic XP
@@ -15,15 +49,15 @@ Added Staff entries to Magic skill, using these now give XP:
 **🐞 Bug Fix**
 - Fixed an issue where **Wands** and **Spellbooks** were incorrectly granting **Archery XP** instead of **Magic XP**.
 
-## ⚔️ Combat
+### ⚔️ Combat
 - Buffed Onyxium weapon XP from 55 XP > 65 XP
 - Added Prisma Dagger: +75 XP to Dagger skill
 - Added Prisma Sword: +75 XP to Sword skill
 
-## 🔧 Hotfix: Thorium & Cobalt XP Balance
+### 🔧 Hotfix: Thorium & Cobalt XP Balance
 
-* **Cobalt gear and ore now grant more XP**
-* **Thorium gear and ore now grant less XP**
+* Cobalt gear and ore now grant more XP
+* Thorium gear and ore now grant less XP
 * Applies to combat skills and mining
 
 This update better aligns XP rewards with intended material progression.
