@@ -1,5 +1,37 @@
 # 2026-02-28
 
+# <img width="40" height="40" alt="image" src="https://github.com/user-attachments/assets/be955476-1ea3-4e56-8880-d1cd44fb01c6" /> Skill Updates  
+
+## 🪄 Magic
+Added Staff entries to Magic skill, using these now give XP:
+- Copper Staff: +8 Magic XP
+- Iron Staff: +12 Magic XP
+- Thorium Staff: +25 Magic XP
+- Cobalt Staff: +30 Magic XP
+- Adamantite Staff: +35 Magic XP
+- Mithril Staff: +48 Magic XP
+- Onyxium Staff: +65 Magic XP
+
+## ⚔️ Combat
+- Buffed Onyxium weapon XP from 55 XP > 65 XP
+- Added Prisma Dagger: +75 XP to Dagger skill
+- Added Prisma Sword: +75 XP to Sword skill
+
+## 🔧 Hotfix: Thorium & Cobalt XP Balance
+
+* **Cobalt gear and ore now grant more XP**
+* **Thorium gear and ore now grant less XP**
+* Applies to combat skills and mining
+
+This update better aligns XP rewards with intended material progression.
+
+---
+
+If you want it even punchier (one-liner) or formatted for **Steam / Discord / in-game popup**, tell me where it’s going.
+
+
+# 2026-02-28
+
 # 🌿 Agriculture Update
 
 ### 🆕 New Features 🌻
