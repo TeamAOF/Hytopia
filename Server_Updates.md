@@ -1,6 +1,6 @@
 # 2026-02-28
 
-## ☠️ Elite Drops
+# ☠️ Elite Drops
 
 Additional essences now dropping from **Elite mobs** alongside the existing Life Essence.
 
@@ -34,7 +34,7 @@ These essences drop **in addition to** Life Essence and do not replace it.
 If you want a **one-paragraph Discord version** or a **dev-only changelog**, I can spin that up too 👌
 
 
-## <img width="40" height="40" alt="image" src="https://github.com/user-attachments/assets/be955476-1ea3-4e56-8880-d1cd44fb01c6" /> Skill Updates  
+# <img width="40" height="40" alt="image" src="https://github.com/user-attachments/assets/be955476-1ea3-4e56-8880-d1cd44fb01c6" /> Skill Updates  
 
 ### 🪄 Magic
 Added Staff entries to Magic skill, using these now give XP:
